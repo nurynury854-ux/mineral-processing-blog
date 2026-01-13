@@ -1,4 +1,4 @@
-import { getSortedPostsData, getPostsByTag } from '@/lib/posts';
+import { getSortedPostsData, getPostsByTag } from '@/lib/posts.server';
 import { PostCard } from '@/components/PostCard';
 import { Sidebar } from '@/components/Sidebar';
 

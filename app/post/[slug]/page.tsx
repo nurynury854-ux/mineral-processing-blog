@@ -1,4 +1,4 @@
-import { getPostData, getAllPostSlugs } from '@/lib/posts';
+import { getPostData, getAllPostSlugs } from '@/lib/posts.server';
 import { formatDate } from '@/lib/utils';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';

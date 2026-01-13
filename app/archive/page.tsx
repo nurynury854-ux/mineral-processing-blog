@@ -1,4 +1,4 @@
-import { getPostsByYear } from '@/lib/posts';
+import { getPostsByYear } from '@/lib/posts.server';
 import Link from 'next/link';
 import { Calendar, FileText } from 'lucide-react';
 
