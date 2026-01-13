@@ -5,14 +5,14 @@ import { formatDate } from '@/lib/utils';
 
 export function PostCard({ post }: { post: PostMetadata }) {
   return (
-    <article className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-6 hover:shadow-lg transition-shadow">
+    <article className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-lg transition-shadow">
       <Link href={`/post/${post.slug}`}>
-        <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <h2 className="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
           {post.title}
         </h2>
       </Link>
       
-      <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
+      <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
         <div className="flex items-center">
           <Calendar className="w-4 h-4 mr-1.5" />
           <time dateTime={post.date}>
@@ -28,7 +28,7 @@ export function PostCard({ post }: { post: PostMetadata }) {
       </div>
 
       {post.excerpt && (
-        <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3">
+        <p className="text-gray-700 mb-4 line-clamp-3">
           {post.excerpt}
         </p>
       )}
@@ -39,7 +39,7 @@ export function PostCard({ post }: { post: PostMetadata }) {
             <Link
               key={tag}
               href={`/tag/${encodeURIComponent(tag)}`}
-              className="inline-flex items-center px-2.5 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors"
+              className="inline-flex items-center px-2.5 py-0.5 text-xs font-medium bg-blue-100 text-blue-800 rounded-full hover:bg-blue-200 transition-colors"
             >
               <TagIcon className="w-3 h-3 mr-1" />
               {tag}
@@ -50,7 +50,7 @@ export function PostCard({ post }: { post: PostMetadata }) {
 
       <Link
         href={`/post/${post.slug}`}
-        className="inline-flex items-center text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+        className="inline-flex items-center text-sm font-medium text-blue-600 hover:underline"
       >
         Унших →
       </Link>

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="mn" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100`}
+        className={`${inter.variable} font-sans antialiased bg-white text-gray-900`}
       >
         <ThemeProvider>
           <div className="flex flex-col min-h-screen">

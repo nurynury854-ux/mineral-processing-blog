@@ -46,13 +46,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           Буцах / Back to Home
         </Link>
 
-        <article className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-8 md:p-12">
-          <header className="mb-8 border-b border-gray-200 dark:border-gray-800 pb-8">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <article className="bg-white rounded-lg border border-gray-200 p-8 md:p-12">
+          <header className="mb-8 border-b border-gray-200 pb-8">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
               {post.title}
             </h1>
 
-            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-1.5" />
                 <time dateTime={post.date}>

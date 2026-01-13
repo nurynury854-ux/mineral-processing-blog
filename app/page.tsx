@@ -16,10 +16,10 @@ export default function Home() {
         {/* Main Content */}
         <div className="lg:col-span-2">
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">
               Ашигт малтмалын баяжуулалтын техник, технологи
             </h1>
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600">
               Mineral Processing Technology & Engineering
             </p>
           </div>
@@ -30,11 +30,11 @@ export default function Home() {
                 <PostCard key={post.slug} post={post} />
               ))
             ) : (
-              <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-12 text-center">
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+              <div className="bg-white rounded-lg border border-gray-200 p-12 text-center shadow-sm">
+                <p className="text-gray-600 mb-4">
                   Одоогоор нийтлэл байхгүй байна.
                 </p>
-                <p className="text-sm text-gray-500 dark:text-gray-500">
+                <p className="text-sm text-gray-500">
                   No posts available yet. Content is being migrated from the original blog.
                 </p>
               </div>
