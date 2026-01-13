@@ -106,3 +106,21 @@ html {
 .prose blockquote {
   @apply border-l-4 border-blue-600 pl-4 italic text-gray-600 dark:text-gray-400 my-4;
 }
+
+/* Smooth theme transitions */
+html {
+  color-scheme: light dark;
+}
+
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Prevent flashing on page load */
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
