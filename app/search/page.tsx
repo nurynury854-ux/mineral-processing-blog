@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { PostMetadata } from "@/types/post";
 
 export default function SearchPage() {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<PostMetadata[]>([]);
 
   useEffect(() => {
     if (!query) return;

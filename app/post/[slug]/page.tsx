@@ -1,4 +1,4 @@
-import { getPostData, getAllPostSlugs } from '@/lib/posts.server';
+import { getFullPostData, getAllPostSlugs } from '@/lib/posts.server';
 import { formatDate } from '@/lib/utils';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = await getPostData(slug);
+  const post = await getFullPostData(slug);
   
   if (!post) {
     return {
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const post = await getPostData(slug);
+  const post = await getFullPostData(slug);
 
   if (!post) {
     notFound();
