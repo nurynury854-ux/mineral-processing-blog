@@ -14,7 +14,7 @@ export default function AboutPage() {
           <div className="flex items-center gap-6 mb-8 pb-8 border-b border-gray-200">
             <div className="w-24 h-24 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden">
               <Image
-                src="/PFP.png"
+                src="/profile.png"
                 alt="G.Davaatseren"
                 width={96}
                 height={96}
@@ -40,14 +40,14 @@ export default function AboutPage() {
                 <User className="w-6 h-6 mr-2" />
                 Танилцуулга / Introduction
               </h2>
-              <div className="prose prose-lg max-w-none">
+              <div className="space-y-4">
                 <p className="text-black leading-relaxed">
                   Би ашигт малтмалын баяжуулалтын чиглэлээр мэргэшсэн инженер бөгөөд 
                   уул уурхайн салбарт олон жил ажилласан туршлагатай. Энэхүү блогоор дамжуулан 
                   миний судалгааны ажил, практик туршлага болон баяжуулалтын чиглэлийн 
                   сүүлийн үеийн технологи, техникийн талаархи мэдээллийг хуваалцдаг.
                 </p>
-                <p className="text-black leading-relaxed mt-4">
+                <p className="text-black leading-relaxed">
                   I am a mineral processing engineer with extensive experience in the mining industry. 
                   Through this blog, I share my research work, practical experience, and information 
                   about the latest technologies and techniques in mineral processing.
