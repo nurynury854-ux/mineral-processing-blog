@@ -21,11 +21,11 @@ export default function PublicationsPage() {
 
         <div className="bg-white rounded-lg border border-gray-200 p-8 shadow-sm">
           <div className="mb-8">
-            <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <p className="text-2xl font-bold text-blue-600 mb-2">
+            <div className="bg-blue-600 dark:bg-blue-700 rounded-lg p-6 border border-blue-700">
+              <p className="text-2xl font-bold text-white mb-2">
                 70+ эрдэм шинжилгээний бүтээл
               </p>
-              <p className="text-gray-700">
+              <p className="text-blue-50">
                 Олон улсын болон дотоодын эрдэм шинжилгээний сэтгүүл, хурлын материалд нийтлэгдсэн
               </p>
             </div>
@@ -82,38 +82,38 @@ export default function PublicationsPage() {
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">
+                <div className="bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">
                     Нунтаглалт, Тээрэмдэх
                   </h3>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-blue-100">
                     Comminution & Grinding Technology
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">
+                <div className="bg-gradient-to-br from-purple-600 to-purple-700 dark:from-purple-700 dark:to-purple-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">
                     Процессын загварчлал
                   </h3>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-purple-100">
                     Process Modeling & Simulation
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">
+                <div className="bg-gradient-to-br from-green-600 to-green-700 dark:from-green-700 dark:to-green-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">
                     Төмрийн хүдрийн баяжуулалт
                   </h3>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-green-100">
                     Iron Ore Processing
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">
+                <div className="bg-gradient-to-br from-orange-600 to-orange-700 dark:from-orange-700 dark:to-orange-800 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">
                     Нүүрсний баяжуулалт
                   </h3>
-                  <p className="text-sm text-gray-700">
+                  <p className="text-sm text-orange-100">
                     Coal Processing & Beneficiation
                   </p>
                 </div>
